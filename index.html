@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Styled Webpage</title>
+    <title>My Styled Webpage with Images</title>
     
     <style>
-        /* This is the CSS section where we style the page */
+        /* This section controls the "look" of your site */
         body {
-            background-color: #f0f4f8; /* A light, soft blue background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cleaner font */
-            color: #333; /* Dark grey text (easier on the eyes than pure black) */
-            line-height: 1.6; /* Adds space between lines of text */
-            margin: 40px; /* Adds space around the edges of the whole page */
+            background-color: #f0f4f8; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* This centers everything on the page */
         }
 
         h1 {
-            color: #2c3e50; /* A deep navy blue for the main heading */
-            border-bottom: 2px solid #2c3e50; /* Adds a stylish line under the title */
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
+            text-align: center;
         }
 
         h2 {
-            color: #e67e22; /* A nice orange for your update heading */
+            color: #e67e22;
         }
 
-        p {
+        /* This styles the box around your text */
+        .content-box {
             background-color: white;
-            padding: 20px;
-            border-radius: 8px; /* Rounds the corners of the box */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+
+        /* This styles your image */
+        .profile-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -37,9 +53,13 @@
 
     <h1>Welcome to Web Development 101</h1>
     
-    <h2>Update: I just learned how to style my site!</h2>
+    <h2>Update: I just added an image!</h2>
 
-    <p>This is my very first official webpage! In this class, we are learning how to use GitHub, manage repositories, and write HTML code to share our ideas with the world. It's a bit challenging at first, but seeing it go live is the best part.</p>
+    <img src="my-photo.jpg" alt="A photo for my new website" class="profile-img">
+
+    <div class="content-box">
+        <p>This is my very first official webpage! In this class, we are learning how to use GitHub, manage repositories, and write HTML code to share our ideas with the world. Adding images and CSS really makes the project come to life.</p>
+    </div>
 
 </body>
 </html>
