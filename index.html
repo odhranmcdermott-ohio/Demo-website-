@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Styled Webpage with Images</title>
+    <title>My Styled Webpage</title>
     
     <style>
-        /* This section controls the "look" of your site */
         body {
             background-color: #f0f4f8; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +14,7 @@
             margin: 40px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* This centers everything on the page */
+            align-items: center;
         }
 
         h1 {
@@ -25,20 +24,7 @@
             text-align: center;
         }
 
-        h2 {
-            color: #e67e22;
-        }
-
-        /* This styles the box around your text */
-        .content-box {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 800px;
-        }
-
-        /* This styles your image */
+        /* This styles your image and handles the 'broken' look if the path is wrong */
         .profile-img {
             width: 100%;
             max-width: 600px;
@@ -46,6 +32,16 @@
             border-radius: 15px;
             margin: 20px 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background-color: #ddd; /* Shows a grey box if image is missing */
+            min-height: 200px; 
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
         }
     </style>
 </head>
@@ -53,12 +49,12 @@
 
     <h1>Welcome to Web Development 101</h1>
     
-    <h2>Update: I just added an image!</h2>
+    <h2>Update: Troubleshooting my image!</h2>
 
-    <img src="IMG_0734.png" alt="A photo for my new website" class="profile-img">
+    <img src="IMG_0734.png" alt="My uploaded photo" class="profile-img">
 
     <div class="content-box">
-        <p>This is my very first official webpage! In this class, we are learning how to use GitHub, manage repositories, and write HTML code to share our ideas with the world. Adding images and CSS really makes the project come to life.</p>
+        <p>This is my very first official webpage! I'm currently troubleshooting my image display. If the image above is a grey box, it means the filename in my code doesn't perfectly match the file I uploaded to GitHub.</p>
     </div>
 
 </body>
