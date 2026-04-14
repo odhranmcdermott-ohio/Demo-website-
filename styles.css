@@ -1,56 +1,59 @@
 /* Styling for the whole page */
 body { 
-    background-color: #f0f4f8; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #333; 
-    line-height: 1.6; 
-    margin: 40px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    background-color: #121212; /* deep dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* clean modern font */
+    color: #e0e0e0; /* light grey text so it's readable */
+    line-height: 1.6; /* adding space between lines of text */
+    margin: 40px; /* spacing around the edge of the screen */
+    display: flex; /* using flexbox to align content */
+    flex-direction: column; /* stacking items from top to bottom */
+    align-items: center; /* centering everything in the middle */
 } 
 
-/* Styling for headers */
+/* Styling for the main title */
 h1 { 
-    color: #2c3e50; 
-    border-bottom: 2px solid #2c3e50; 
-    padding-bottom: 10px; 
-    text-align: center; 
+    color: #bb86fc; /* soft purple accent color */
+    border-bottom: 2px solid #bb86fc; /* matching line under the title */
+    padding-bottom: 10px; /* space between text and the line */
+    text-align: center; /* centering the header text */
 } 
 
-h2 { 
-    color: #e67e22; 
+/* Styling for sub-headers */
+h2, h3 { 
+    color: #03dac6; /* teal accent color for sub-titles */
 } 
 
 /* Image formatting */
 .profile-img { 
-    width: 100%; 
-    max-width: 600px; 
-    height: auto; 
-    border-radius: 15px; 
-    margin: 20px 0; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-    background-color: #ddd; 
+    width: 100%; /* makes image responsive */
+    max-width: 600px; /* prevents images from getting too huge */
+    height: auto; /* keeps the photo's shape correct */
+    border-radius: 15px; /* rounds the corners of the photos */
+    margin: 20px 0; /* adds space above and below photos */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* dark shadow for depth */
+    border: 1px solid #333; /* thin border to help images stand out */
 } 
 
-/* The main white box */
+/* The main content box */
 .content-box { 
-    background-color: white; 
-    padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-    max-width: 800px; 
-    text-align: center; 
+    background-color: #1e1e1e; /* slightly lighter grey for the box */
+    padding: 30px; /* space inside the box */
+    border-radius: 12px; /* rounded corners for the box */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* subtle shadow around the box */
+    max-width: 800px; /* setting a max width for the box */
+    text-align: center; /* centering text inside the box */
+    border: 1px solid #333; /* dark border for the box */
 } 
 
 /* Link styling */
 a { 
-    color: #3498db; 
-    text-decoration: none; 
-    font-weight: bold; 
+    color: #03dac6; /* matching the teal accent color */
+    text-decoration: none; /* removing the default underline */
+    font-weight: bold; /* making links pop out */
 } 
 
+/* Link hover effect */
 a:hover { 
-    color: #2980b9; 
-    text-decoration: underline; 
+    color: #bb86fc; /* changes to purple when you hover over it */
+    text-decoration: underline; /* adds underline back on hover */
 }
